@@ -18,12 +18,12 @@ MonoBehaviour:
     m_Storage: []
   m_Images:
   - m_SerializedGuid:
-      m_GuidLow: 5626849362411560520
-      m_GuidHigh: 4227648387965465498
+      m_GuidLow: 5453274204770353876
+      m_GuidHigh: 2344196662135036317
     m_SerializedTextureGuid:
-      m_GuidLow: 16565488553797485059
-      m_GuidHigh: 16923340298814660410
-    m_Size: {x: 0.5, y: 0.5}
-    m_SpecifySize: 1
+      m_GuidLow: 7279064430581609400
+      m_GuidHigh: 7224251068467515416
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
     m_Name: 3421fa2cd778f85dfc33c72728b57d1e-tyrannosaurus-dino-lindo
     m_Texture: {fileID: 0}
