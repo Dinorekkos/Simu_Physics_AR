@@ -170,7 +170,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0912589, y: -0.28331167, z: -0.008356316}
+  m_ConnectedAnchor: {x: 0.09125893, y: -0.16598865, z: -0.008465123}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -230,14 +230,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -491,7 +491,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000028789646, y: 0.25331664, z: 0.04078659}
+  m_ConnectedAnchor: {x: 0.43122342, y: 1.6007531, z: -0.67205554}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -551,14 +551,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -585,10 +585,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.12083043
-  m_Height: 0.34016198
+  m_Radius: 0.098452084
+  m_Height: 0.26409066
   m_Direction: 1
-  m_Center: {x: -1.1377607e-13, y: 0.06925056, z: 5.165417e-10}
+  m_Center: {x: -8.0318686e-14, y: 0.07802218, z: 0.0000000011637968}
 --- !u!54 &426679239
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -700,29 +700,24 @@ CapsuleCollider:
   m_GameObject: {fileID: 476078574}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.17043312
-  m_Height: 0.41341776
+  m_Enabled: 1
+  m_Radius: 0.1444096
+  m_Height: 0.2888192
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &507164560 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3135921509060577837, guid: ca3e2d6f12044a64e96f09ff04876696, type: 3}
-  m_PrefabInstance: {fileID: 1878064444}
-  m_PrefabAsset: {fileID: 0}
---- !u!153 &507164562
+  m_Center: {x: -0.0008994341, y: 0.04923284, z: 3.7727726e-10}
+--- !u!153 &476078579
 ConfigurableJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507164560}
-  m_ConnectedBody: {fileID: 1746151060}
+  m_GameObject: {fileID: 476078574}
+  m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.43122232, y: 1.3472097, z: -0.71140885}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -782,14 +777,131 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
+    serializedVersion: 3
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
+  m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
     positionDamper: 0
     maximumForce: 3.4028233e+38
+  m_ProjectionMode: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_ConfiguredInWorldSpace: 0
+  m_SwapBodies: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!54 &476078580
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476078574}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1 &507164560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3135921509060577837, guid: ca3e2d6f12044a64e96f09ff04876696, type: 3}
+  m_PrefabInstance: {fileID: 1878064444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!153 &507164562
+ConfigurableJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507164560}
+  m_ConnectedBody: {fileID: 1746151060}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -0.09123017, y: -0.16600434, z: -0.008467519}
+  serializedVersion: 2
+  m_SecondaryAxis: {x: 0, y: 1, z: 0}
+  m_XMotion: 0
+  m_YMotion: 0
+  m_ZMotion: 0
+  m_AngularXMotion: 2
+  m_AngularYMotion: 2
+  m_AngularZMotion: 2
+  m_LinearLimitSpring:
+    spring: 0
+    damper: 0
+  m_LinearLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularXLimitSpring:
+    spring: 0
+    damper: 0
+  m_LowAngularXLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_HighAngularXLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularYZLimitSpring:
+    spring: 0
+    damper: 0
+  m_AngularYLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularZLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_TargetPosition: {x: 0, y: 0, z: 0}
+  m_TargetVelocity: {x: 0, y: 0, z: 0}
+  m_XDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_YDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_ZDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
+  m_RotationDriveMode: 0
+  m_AngularXDrive:
+    serializedVersion: 3
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
+  m_AngularYZDrive:
+    serializedVersion: 3
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -853,7 +965,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.18760827, y: 0.08853468, z: -0.01845332}
+  m_ConnectedAnchor: {x: 0.24361467, y: 1.4356399, z: -0.7303635}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -913,14 +1025,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -948,9 +1060,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.06404049
-  m_Height: 0.31477016
+  m_Height: 0.29087526
   m_Direction: 1
-  m_Center: {x: 0.000000008010138, y: 0.12589392, z: 0.0000000090876275}
+  m_Center: {x: 0.000000010833892, y: 0.113946475, z: 0.000000011283712}
 --- !u!54 &514958685
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1082,7 +1194,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.33758092, y: 0.5253922, z: -0.6743503}
+  m_ConnectedAnchor: {x: 0.000000019324943, y: 0.40599465, z: -0.000000009778887}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1142,14 +1254,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -1480,14 +1592,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -1515,9 +1627,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.06334531
-  m_Height: 0.32732743
+  m_Height: 0.30183926
   m_Direction: 1
-  m_Center: {x: -0.000000003570171, y: 0.14031225, z: -0.000000014963433}
+  m_Center: {x: 3.46375e-11, y: 0.15305634, z: -0.000000013979804}
 --- !u!54 &943790252
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1705,7 +1817,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000007916242, y: 0.4209903, z: -0.000000023283064}
+  m_ConnectedAnchor: {x: 0.00000004703179, y: 0.4209906, z: -0.000000008381903}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1765,14 +1877,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -2091,10 +2203,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.06710732
-  m_Height: 0.31582114
+  m_Radius: 0.053289793
+  m_Height: 0.29723072
   m_Direction: 1
-  m_Center: {x: -4.251245e-11, y: 0.095021255, z: 0.009340906}
+  m_Center: {x: 8.493857e-10, y: 0.08572612, z: -0.016996691}
 --- !u!54 &1472806885
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2123,7 +2235,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.5225536, y: 0.104929626, z: -0.69494945}
+  m_ConnectedAnchor: {x: -0.000000033527613, y: 0.42099053, z: 0.000000031664968}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2183,14 +2295,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -2224,7 +2336,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000027241185, y: 0.4059943, z: 0.000000011641532}
+  m_ConnectedAnchor: {x: -0.00000005378388, y: 0.40599445, z: 0.000000013504177}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2284,14 +2396,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -2433,11 +2545,11 @@ CapsuleCollider:
   m_GameObject: {fileID: 1602029469}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.16807121
-  m_Height: 0.33614245
+  m_Enabled: 0
+  m_Radius: 0.10885994
+  m_Height: 0.21771991
   m_Direction: 1
-  m_Center: {x: 0, y: -0.03999999, z: 1.408457e-10}
+  m_Center: {x: 0, y: -0.059211537, z: 5.905887e-10}
 --- !u!54 &1602029475
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2466,7 +2578,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.000000007565177, y: 0.11731988, z: 0.000000035390258}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2526,14 +2638,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -2742,7 +2854,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.43122232, y: 1.0971533, z: -0.6809218}
+  m_ConnectedAnchor: {x: 0.4345475, y: 1.0970979, z: -0.6809218}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2802,14 +2914,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -2905,7 +3017,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.18760774, y: 0.08856673, z: -0.018452737}
+  m_ConnectedAnchor: {x: 0.6188307, y: 1.4356695, z: -0.7303613}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2965,14 +3077,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -3000,9 +3112,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.06592032
-  m_Height: 0.32625604
+  m_Height: 0.284041
   m_Direction: 1
-  m_Center: {x: -0.000000001410426, y: 0.12040876, z: 0.0006770676}
+  m_Center: {x: 0.0000000027611295, y: 0.11523192, z: 0.0006770648}
 --- !u!54 &1795513269
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3176,9 +3288,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.06342954
-  m_Height: 0.27615649
+  m_Height: 0.2586335
   m_Direction: 1
-  m_Center: {x: 0.0000000022980597, y: 0.1164383, z: -0.000000018421519}
+  m_Center: {x: 0.0000000056849894, y: 0.1251998, z: -0.00000002168784}
 --- !u!153 &1878064447
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -3251,14 +3363,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -3368,14 +3480,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -3419,9 +3531,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.060571324
-  m_Height: 0.29076675
+  m_Height: 0.27802247
   m_Direction: 1
-  m_Center: {x: -0.0000000013678407, y: 0.12723954, z: -0.000000027588527}
+  m_Center: {x: -0.000000001429539, y: 0.12086741, z: -0.000000028797034}
 --- !u!1 &1923619688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3583,14 +3695,14 @@ ConfigurableJoint:
   m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_AngularYZDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
+    positionSpring: 1
+    positionDamper: 1
+    maximumForce: 5
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -3617,10 +3729,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.079555385
-  m_Height: 0.24053475
+  m_Radius: 0.05606065
+  m_Height: 0.20230082
   m_Direction: 1
-  m_Center: {x: 0.0000000069389094, y: 0.088743135, z: 0.000000027649149}
+  m_Center: {x: 0, y: 0.1070601, z: 0}
 --- !u!54 &2133224406
 Rigidbody:
   m_ObjectHideFlags: 0
