@@ -66,7 +66,10 @@ public class Fabrik : MonoBehaviour
             }
             else
             {
-                bones[i].rotation = Quaternion.LookRotation(target.position - bones[i].position);
+                if (target.position - bones[i].position != Vector3.zero)
+                {
+                    bones[i].rotation = Quaternion.LookRotation(target.position - bones[i].position);
+                }
 
             }
         }
