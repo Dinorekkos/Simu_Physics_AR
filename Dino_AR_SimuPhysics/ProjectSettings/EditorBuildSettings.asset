@@ -9,6 +9,7 @@ EditorBuildSettings:
     path: Assets/Dino/Scene/AR_TowerDefense_Dino.unity
     guid: 6ae1dc586dff6914095cc9780c181728
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 28a87b6b4a5afe64fbd43c2fe7d5af05, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 8c64198b50926b641a8b025d80e47ae3, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cf9e40354eaf07d43b8c4449806f7001, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: cc256fce76997d748bcd3e43da9bd9b4, type: 2}

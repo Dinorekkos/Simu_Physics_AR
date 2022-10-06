@@ -360,8 +360,8 @@ Transform:
   m_LocalScale: {x: 0.080761, y: 0.080761, z: 0.080761}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8970719298895677794}
-  m_RootOrder: 3
+  m_Father: {fileID: 8440605769556414596}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &138813883 stripped
 GameObject:
@@ -728,7 +728,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &393365069
 GameObject:
@@ -3807,16 +3807,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850212628}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.112, y: 1.488, z: 1.639}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 0.053000003, y: -0.039, z: 0.066}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 331443839}
   - {fileID: 1212117976}
   - {fileID: 1373095502}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 8970719297348300602}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1850212630
 MonoBehaviour:
@@ -3836,7 +3836,7 @@ MonoBehaviour:
   - {fileID: 1373095502}
   boneLeghts: []
   solverIterations: 4
-  target: {fileID: 8970719298895677794}
+  target: {fileID: 8970719299029793423}
 --- !u!1001 &1878064444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6513,6 +6513,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 687333451501075744}
+  - {fileID: 137326444}
   m_Father: {fileID: 8970719299029793423}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6628,7 +6629,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1850212629}
   m_Father: {fileID: 8970719297548468406}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6870,7 +6872,7 @@ Transform:
   m_Children:
   - {fileID: 8970719297548468406}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &8970719297829236383
 MonoBehaviour:
@@ -8325,7 +8327,6 @@ Transform:
   - {fileID: 8970719298089647309}
   - {fileID: 8970719299029793423}
   - {fileID: 8970719298055006968}
-  - {fileID: 137326444}
   m_Father: {fileID: 8970719297548468406}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
