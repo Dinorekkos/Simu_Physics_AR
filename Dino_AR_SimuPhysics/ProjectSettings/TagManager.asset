@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Awa
+  - Ball
   layers:
   - Default
   - TransparentFX

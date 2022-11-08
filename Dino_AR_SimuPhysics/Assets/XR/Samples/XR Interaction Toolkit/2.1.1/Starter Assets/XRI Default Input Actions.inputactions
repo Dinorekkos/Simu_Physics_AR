@@ -712,7 +712,7 @@
                 {
                     "name": "ShootCannon",
                     "type": "Button",
-                    "id": "d4381f05-286e-47bc-8c68-3c13a9a9ada5",
+                    "id": "fffbd2f2-dd4c-452d-b1f0-20f9b198a70c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -810,8 +810,19 @@
                 },
                 {
                     "name": "",
-                    "id": "8161b73b-1bb5-4b3b-bff5-2d2d2d4da9a9",
+                    "id": "396ee84c-e2af-4f53-a10c-d53fbbef3843",
                     "path": "<XRController>{RightHand}/triggerButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "ShootCannon",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d5373148-bdd2-4f05-8646-b47d77430b1b",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -821,8 +832,8 @@
                 },
                 {
                     "name": "",
-                    "id": "c251156e-66ef-4763-a0f2-bd798550a573",
-                    "path": "<Keyboard>/space",
+                    "id": "da729dfb-ec78-4182-814a-096d7e0e5661",
+                    "path": "<XRController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -889,6 +900,33 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "ImpulseShip",
+                    "type": "Button",
+                    "id": "c29b1ae6-f78c-4365-b0dd-0d611a7387cd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Grab",
+                    "type": "Button",
+                    "id": "6e6bbd00-ec7c-46d0-90b4-6e0ac8c8f818",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Drop",
+                    "type": "Button",
+                    "id": "c69ef66a-95e5-4a79-85dd-a891500e70c5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -955,6 +993,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "ShipRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5645c6e0-3346-439c-b58c-8d742fe06aaf",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ImpulseShip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2fe6bf53-e3db-4a26-a8ce-7d18648a92eb",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "09661c99-ece5-4acf-8cdb-00d7dd557422",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Drop",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

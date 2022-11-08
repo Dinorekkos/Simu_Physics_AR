@@ -5,11 +5,13 @@ using UnityEngine.InputSystem;
 public class Ship : MonoBehaviour
 {
     [Header("Input")] 
-    [SerializeField] private InputActionReference inputReference;
+    [SerializeField] private InputActionReference inputReferenceRotate;
+    [SerializeField] private InputActionReference inputReferenceImpulse;
     [Header("Physics")]
     [SerializeField] private Transform _frontShip;
     [SerializeField] private Transform _backShip;
     [SerializeField] private float forceImpulse;
+    [SerializeField] private float forceAngle = 10;
     [SerializeField] private Vector3 angleVelocity;
 
     private Rigidbody _rigidbody;
@@ -21,7 +23,8 @@ public class Ship : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
         _keyboard = Keyboard.current;
 
-        inputReference.action.performed += ctx => RotateShip();
+        inputReferenceRotate.action.performed += ctx => RotateShip();
+        inputReferenceImpulse.action.performed += ctx => AddImpulseToShip();
 
     }
 
@@ -29,10 +32,10 @@ public class Ship : MonoBehaviour
     {
         
         ReadVectorValue();
-        // if (_keyboard.spaceKey.isPressed)
-        // {
-            // AddImpulseToShip();
-        // }
+        if (_keyboard.spaceKey.isPressed)
+        {
+            AddImpulseToShip();
+        }
 
         // if (_keyboard.rKey.isPressed)
         // {
@@ -43,19 +46,20 @@ public class Ship : MonoBehaviour
 
     void AddImpulseToShip()
     {
+        print("Add impulse");
         _rigidbody.AddForce(((-1)*_frontShip.forward) * forceImpulse, ForceMode.Force);
     }
 
     void RotateShip()
     {
-        Quaternion deltaRotation = Quaternion.Euler(angleVelocity  * Time.fixedDeltaTime * forceImpulse);
+        Quaternion deltaRotation = Quaternion.Euler(angleVelocity  * Time.fixedDeltaTime * forceAngle);
         _rigidbody.MoveRotation(_rigidbody.rotation * deltaRotation);
     }
     
     
     void ReadVectorValue()
     {
-        _inputVector = inputReference.action.ReadValue<Vector2>();
+        _inputVector = inputReferenceRotate.action.ReadValue<Vector2>();
 
         // print(_inputVector);
         

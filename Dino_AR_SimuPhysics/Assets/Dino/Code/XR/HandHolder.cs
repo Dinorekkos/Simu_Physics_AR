@@ -1,9 +1,14 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 public class HandHolder : XRBaseInteractable
 {
     [Header("Hand Holder")]
+    [SerializeField] private InputActionReference inputActionReferenceGrab;
+    [SerializeField] private InputActionReference inputActionReferenceDrop;
+
     [SerializeField] HandController_xR handController;
     public Action<bool> OnGrabbed;
     private bool _isGrabbing;
@@ -12,18 +17,30 @@ public class HandHolder : XRBaseInteractable
     protected override void Awake()
     {
         base.Awake();
-        onSelectEntered.AddListener(Grab);
-        onSelectExited.AddListener(Drop);
+        // onSelectEntered.AddListener(Grab);
+        // onSelectExited.AddListener(Drop);
     }
-    protected virtual void Grab(XRBaseInteractor interactor)
+
+    private void Start()
     {
+        inputActionReferenceGrab.action.performed += ctx => Grab();
+        inputActionReferenceDrop.action.performed += ctx => Drop();
+        IXRSelectInteractor newInteractor = firstInteractorSelecting;
+        List<IXRSelectInteractor> moreInteractors = interactorsSelecting;
+    }
+
+    public virtual void Grab()
+    {
+        Debug.Log("Se grabbea?");
         _isGrabbing = true;
         OnGrabbed?.Invoke(_isGrabbing);
         handController.HandleHandsVisible(false);
     }
 
-    protected virtual void Drop(XRBaseInteractor interactor)
+    public virtual void Drop()
     {
+        Debug.Log("Se suelta?");
+
         _isGrabbing = false;
         OnGrabbed?.Invoke(_isGrabbing);
         handController.HandleHandsVisible(true);

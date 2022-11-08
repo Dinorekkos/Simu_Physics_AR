@@ -6,14 +6,17 @@ using UnityEngine;
 
 public class CannonBall : MonoBehaviour
 {
+
+    [SerializeField] private string name = "Dino"; 
     
     private Rigidbody _rb;
     private Collider _collider;
     private MeshRenderer _meshRenderer;
-
+    
     void Start()
     {
-        _rb = GetComponent<Rigidbody>();
+
+            _rb = GetComponent<Rigidbody>();
         _collider = GetComponent<Collider>();
         _meshRenderer = GetComponent<MeshRenderer>();
         

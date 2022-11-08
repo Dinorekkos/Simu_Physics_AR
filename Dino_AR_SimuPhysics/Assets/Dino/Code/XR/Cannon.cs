@@ -58,6 +58,7 @@ public class Cannon : MonoBehaviour
     
     void FireCannon()
     {
+        Debug.Log("Shoot cannon");
         try
         { 
             CannonBall current = balls.Dequeue();
