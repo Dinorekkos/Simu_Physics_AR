@@ -57,7 +57,7 @@ public class Ship : MonoBehaviour
     {
         _inputVector = inputReference.action.ReadValue<Vector2>();
 
-        print(_inputVector);
+        // print(_inputVector);
         
         if (_inputVector.x < 0)
         {

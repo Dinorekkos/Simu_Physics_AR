@@ -3,43 +3,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.InputSystem;
 
 public class Cannon : MonoBehaviour
 {
+    [SerializeField] private InputActionReference inputActionReference;
+    [SerializeField] private GameObject cannonToRotate;
+    [SerializeField] private HandHolder _handHolder;
+    [SerializeField] private bool _isGrabbingHolders = false;
+    [SerializeField] private int maxProjectiles;
+    [SerializeField] private float launchForce;
+    [SerializeField] private GameObject projectile;
 
-    [SerializeField] private HandHolder rightHandHolder;
-    [SerializeField] private HandHolder leftHandHolder;
-    
-    
-    bool _isGrabbingHolders = false;
-    
-    
-    public bool IsGrabbingHolders
-    {
-        get { return _isGrabbingHolders; }
-    }
-    
-    
+    private Queue<CannonBall> balls;
+
     public Action<bool> OnGrabHolders;
     void Start()
     {
-        
+        inputActionReference.action.performed += ctx => FireCannon();
+        _handHolder.OnGrabbed += HandleGrabHolders;
+        BuildPool();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (_isGrabbingHolders)
+        {
+            RotateCannon();
+        }
     }
-    
+
     private void RotateCannon()
     {
-        
+        Vector3 aimDirection =  _handHolder.transform.position - cannonToRotate.transform.position;
+        cannonToRotate.transform.rotation =  Quaternion.LookRotation(aimDirection);
     }
     
-    private void HandleGrabHolders()
+    private void HandleGrabHolders(bool isGrabbing)
     {
-        if (rightHandHolder.IsGrabbing && leftHandHolder.IsGrabbing)
+        
+        if (isGrabbing)
         {
             _isGrabbingHolders = true;
         }
@@ -53,5 +56,30 @@ public class Cannon : MonoBehaviour
     }
     
     
+    void FireCannon()
+    {
+        try
+        { 
+            CannonBall current = balls.Dequeue();
+            current.Fire(transform.position,transform.forward,launchForce);
+        }
+        catch { Debug.Log("Queue Is empty"); }
+        
+    }
+    
+    private void BuildPool()
+    {
+        balls = new Queue<CannonBall>();
+        for (int i = 0; i < maxProjectiles; i++)
+        {
+            GameObject temp = Instantiate(projectile);
+            temp.name = "CanonBall " + i;
+            balls.Enqueue(temp.GetComponent<CannonBall>());
+        }    
+    }
+    
+    
+    
+
 
 }
