@@ -16,4 +16,13 @@ public class Test : MonoBehaviour
     {
         
     }
+
+    void Jump()
+    {
+        Vector2 jumpDirection = new Vector2(0, 1);
+        float jumpForce = 2;
+        
+        _player.Move(jumpDirection * (Time.deltaTime * jumpForce));
+
+    }
 }

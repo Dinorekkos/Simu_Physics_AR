@@ -4,6 +4,10 @@ using UnityEngine.InputSystem;
 
 public class Ship : MonoBehaviour
 {
+    #region Variables
+
+    
+
     [Header("Input")] 
     [SerializeField] private InputActionReference inputReferenceRotate;
     [SerializeField] private InputActionReference inputReferenceImpulse;
@@ -18,6 +22,10 @@ public class Ship : MonoBehaviour
     private Keyboard _keyboard;
     private Vector2 _inputVector;
     private float _yVelocity;
+    #endregion
+
+
+    #region Methods unity
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -25,7 +33,6 @@ public class Ship : MonoBehaviour
 
         inputReferenceRotate.action.performed += ctx => RotateShip();
         inputReferenceImpulse.action.performed += ctx => AddImpulseToShip();
-
     }
 
     void FixedUpdate()
@@ -43,6 +50,11 @@ public class Ship : MonoBehaviour
         // }
         
     }
+    #endregion
+
+    #region Private Methods
+
+    
 
     void AddImpulseToShip()
     {
@@ -75,5 +87,12 @@ public class Ship : MonoBehaviour
         
         angleVelocity = new Vector3(0, _yVelocity, 0);
     }
-    
+    #endregion
+
+
+    #region Public Methods
+
+
+    #endregion
+
 }
